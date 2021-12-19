@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Text</title>
+    <style>
+        body {
+            background-color: rgb(115, 243, 115);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgba(4, 211, 183, 0.767);
+            padding: 10px;
+            margin: 10px;
+            height: 100px;
+            text-align: center;
+        }
+
+        main {
+            background-color: rgba(211, 9, 211, 0.397);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        nav {
+            background-color: darkolivegreen;
+            padding: 3px;
+
+            /*
+             1º Deslocação Horizontal
+             2º Deslocação Vertical
+             3º Embaçamento (blur)
+             4º Espalhamento da Sombra
+             5º Cor
+            */
+
+            box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.5);
+            
+            
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        article{
+            background-color: violet;
+        }
+
+        article > aside{
+            background-color: rgb(110, 1, 110);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="noticias">
+            <article>
+                <h2>Isso eh incrivel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolorum doloribus inventore excepturi                    praesentium eaque dicta ab saepe neque, qui minima distinctio accusantium molestias quisquam cumque commodi doloremque nostrum deleniti.</p>
+                <aside>Sergay papaginov</aside>
+            </article>
+
+        </section>
+        <section class="noticias">
+            <article>
+                <h2>Noticia sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nisi distinctio soluta voluptates,                    corporis saepe in? Officia expedita asperiores quia nobis voluptate optio ducimus provident saepe, tenetur ad vitae sequi!</p>
+                <aside>
+                    <p>Artigo escrito por vitin da silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticias sobre o paraguai</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex commodi officia ratione nisi rem,                     laboriosam repudiandae aliquam voluptatibus. Vero voluptate eaque accusantium commodi. Reprehenderit doloremque harum velit, optio numquam officia.</p>
+                <aside>Conforme pensador contemporaneo vitin</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Vitin</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>
