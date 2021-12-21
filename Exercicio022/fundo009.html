@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
     <style>
-        section#container{
+        #container{
+            position: relative; /*A parte de fora*/
             height: 500px;
+            width: 500px;
             background-color: cornflowerblue;
             padding: 10px;
             
         }
-        article#conteudo{
+        #conteudo{
+            position: absolute; /*A parte de dentro*/
             height: 100px;
-            width: 300px;
+            width: 100px;
             background-color: crimson;
+
+            /*Podemos usar left e top, caso a posição for absoluta*/
+            left: 50%;
+            top: 50%;
             
         }
     </style>
