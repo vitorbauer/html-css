@@ -7,15 +7,22 @@
     <title>Alinhamento Vertical</title>
     <style>
         #container{
+            /*Mascara para centralizar*/
             background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
             position: relative; /*A parte de fora*/
-            height: 500px;
-            width: 500px;
+            height: 94vh;
+
             background-color: cornflowerblue;
             padding: 10px;
             
         }
         #conteudo{
+
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
             position: absolute; /*A parte de dentro*/
             height: 100px;
             width: 100px;
@@ -24,7 +31,8 @@
             /*Podemos usar left e top, caso a posição for absoluta*/
             left: 50%;
             top: 50%;
-            
+            transform: translate(-50%, -50%);
+            /*Imagem centralizada horizontalmente e verticalmente*/
         }
     </style>
 </head>
